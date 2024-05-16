@@ -3,9 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: "Inter , san-serif",
+      fontFamily: {
+        inter: "Inter , san-serif",
+      },
     },
     colors: {
+      white: "#FFFFFF",
       primary: "#C811AA",
       secondary: "#FFD057",
       blue: "#56AEFF",
