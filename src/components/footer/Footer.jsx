@@ -4,7 +4,7 @@ import {
   information,
   partnership,
   socialIcons,
-} from "../../utils/constants";
+} from "@utils/constants";
 import appStore from "@assets/icons/footer/app-store.svg";
 import googlePay from "@assets/icons/footer/google-pay.svg";
 
