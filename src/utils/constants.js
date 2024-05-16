@@ -3,6 +3,17 @@ import facebook from "@assets/icons/footer/facebook.svg";
 import tiktok from "@assets/icons/footer/tiktok.svg";
 import instagram from "@assets/icons/footer/instagram.svg";
 import whatsapp from "@assets/icons/footer/whatsapp.svg";
+import all from "@assets/icons/category/all.svg";
+import transport from "@assets/icons/category/transport.svg";
+import home from "@assets/icons/category/home.svg";
+import tech from "@assets/icons/category/tech.svg";
+import animals from "@assets/icons/category/animals.svg";
+import services from "@assets/icons/category/services.svg";
+import job from "@assets/icons/category/job.svg";
+import tools from "@assets/icons/category/tools.svg";
+import plant from "@assets/icons/category/plant.svg";
+import medicine from "@assets/icons/category/medicine.svg";
+import bussinuesProfile from "@assets/icons/category/bussinues-profile.svg";
 
 export const socialIcons = [
   {
@@ -96,5 +107,62 @@ export const forUsers = [
   {
     id: 4,
     title: "Мои заказы",
+  },
+];
+export const categoryList = [
+  {
+    id: 1,
+    icon: all,
+    name: "Все",
+  },
+  {
+    id: 2,
+    icon: transport,
+    name: "Транспорт",
+  },
+  {
+    id: 3,
+    icon: home,
+    name: "Недвижимость",
+  },
+  {
+    id: 4,
+    icon: tech,
+    name: "Техника и электро...",
+  },
+  {
+    id: 5,
+    icon: animals,
+    name: "Животные",
+  },
+  {
+    id: 6,
+    icon: services,
+    name: "Услуги",
+  },
+  {
+    id: 6,
+    icon: job,
+    name: "Работа",
+  },
+  {
+    id: 7,
+    icon: tools,
+    name: "Оборудование для офиса",
+  },
+  {
+    id: 8,
+    icon: plant,
+    name: "Дом и растения",
+  },
+  {
+    id: 9,
+    icon: medicine,
+    name: "Медицина",
+  },
+  {
+    id: 10,
+    icon: bussinuesProfile,
+    name: "Бизнес профили",
   },
 ];
