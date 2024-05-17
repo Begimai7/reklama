@@ -2,7 +2,7 @@ import { categoryList } from "@utils/constants";
 
 export const Category = () => {
   return (
-    <ul className='flex items-start gap-10'>
+    <ul className='container flex justify-center items-start  gap-10'>
       {categoryList.map((el) => (
         <li className='flex flex-col items-center gap-1 w-[60px]' key={el.id}>
           <img

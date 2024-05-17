@@ -1,9 +1,8 @@
-import React from "react";
-import searchIcon from "../../../public/assets/icons/nav/search-icon.svg";
+import searchIcon from "@assets/icons/nav/search-icon.svg";
 
 export const SearchInput = () => {
   return (
-    <div className='relative'>
+    <div className='container relative'>
       <input
         className=' pl-5 py-3 rounded-md bg-bgGray  w-full outline-none'
         type='text'
