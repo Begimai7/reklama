@@ -14,6 +14,7 @@ import tools from "@assets/icons/category/tools.svg";
 import plant from "@assets/icons/category/plant.svg";
 import medicine from "@assets/icons/category/medicine.svg";
 import bussinuesProfile from "@assets/icons/category/bussinues-profile.svg";
+import bag from "@assets/images/bag.png";
 
 export const socialIcons = [
   {
@@ -164,5 +165,92 @@ export const categoryList = [
     id: 10,
     icon: bussinuesProfile,
     name: "Бизнес профили",
+  },
+];
+
+export const newUpdateData = [
+  {
+    id: 1,
+    img: bag,
+    price: "120 USD",
+    title: "Платная доставка",
+    desc: "Сумка  с кожанными ремнями в оранжевом цвете...",
+  },
+  {
+    id: 2,
+    img: bag,
+    price: "120 USD",
+    title: "Платная доставка",
+    desc: "Сумка  с кожанными ремнями в оранжевом цвете...",
+  },
+  {
+    id: 3,
+    img: bag,
+    price: "120 USD",
+    title: "Платная доставка",
+    desc: "Сумка  с кожанными ремнями в оранжевом цвете...",
+  },
+  {
+    id: 4,
+    img: bag,
+    price: "120 USD",
+    title: "Платная доставка",
+    desc: "Сумка  с кожанными ремнями в оранжевом цвете...",
+  },
+  {
+    id: 5,
+    img: bag,
+    price: "120 USD",
+    title: "Платная доставка",
+    desc: "Сумка  с кожанными ремнями в оранжевом цвете...",
+  },
+  {
+    id: 6,
+    img: bag,
+    price: "120 USD",
+    title: "Платная доставка",
+    desc: "Сумка  с кожанными ремнями в оранжевом цвете...",
+  },
+  {
+    id: 7,
+    img: bag,
+    price: "120 USD",
+    title: "Платная доставка",
+    desc: "Сумка  с кожанными ремнями в оранжевом цвете...",
+  },
+  {
+    id: 8,
+    img: bag,
+    price: "120 USD",
+    title: "Платная доставка",
+    desc: "Сумка  с кожанными ремнями в оранжевом цвете...",
+  },
+  {
+    id: 9,
+    img: bag,
+    price: "120 USD",
+    title: "Платная доставка",
+    desc: "Сумка  с кожанными ремнями в оранжевом цвете...",
+  },
+  {
+    id: 10,
+    img: bag,
+    price: "120 USD",
+    title: "Платная доставка",
+    desc: "Сумка  с кожанными ремнями в оранжевом цвете...",
+  },
+  {
+    id: 11,
+    img: bag,
+    price: "120 USD",
+    title: "Платная доставка",
+    desc: "Сумка  с кожанными ремнями в оранжевом цвете...",
+  },
+  {
+    id: 12,
+    img: bag,
+    price: "120 USD",
+    title: "Платная доставка",
+    desc: "Сумка  с кожанными ремнями в оранжевом цвете...",
   },
 ];
