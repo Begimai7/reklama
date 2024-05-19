@@ -1,9 +1,9 @@
-import { PostingPage } from "./components/posting-page/PostingPage";
+import { WalletBalance } from "./components/wallet_balance/WalletBalance";
 
 function App() {
   return (
     <div>
-      <PostingPage />
+      <WalletBalance />
     </div>
   );
 }
