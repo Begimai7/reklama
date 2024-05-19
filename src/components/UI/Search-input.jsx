@@ -4,7 +4,7 @@ export const SearchInput = () => {
   return (
     <div className='container relative'>
       <input
-        className=' pl-5 py-3 rounded-md bg-bgGray  w-full outline-none'
+        className='pl-5 py-3 rounded-md bg-bgGray w-full outline-none'
         type='text'
         placeholder='Я ищу...'
       />

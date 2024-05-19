@@ -1,6 +1,7 @@
 import { Container } from "../UI/Container";
 import banner from "@assets/images/banner.png";
 import { NewProductUpdates } from "./NewProductUpdates";
+import { Category } from "../UI/Category";
 
 export const LandingPage = () => {
   const pagination = 8;
@@ -8,6 +9,7 @@ export const LandingPage = () => {
   const numbers = Array.from({ length: pagination }, (_, i) => i + 1);
   return (
     <Container>
+      <Category />
       <div className='flex flex-col gap-10'>
         {" "}
         <div className=''>
