@@ -1,9 +1,9 @@
-import { WalletBalance } from "./components/wallet_balance/WalletBalance";
+import { MainPage } from "./components/main-page/MainPage";
 
 function App() {
   return (
     <div>
-      <WalletBalance />
+      <MainPage />
     </div>
   );
 }

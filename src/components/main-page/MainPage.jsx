@@ -3,7 +3,7 @@ import banner from "@assets/images/banner.png";
 import { NewProductUpdates } from "./NewProductUpdates";
 import { Category } from "../UI/Category";
 
-export const LandingPage = () => {
+export const MainPage = () => {
   const pagination = 8;
 
   const numbers = Array.from({ length: pagination }, (_, i) => i + 1);
