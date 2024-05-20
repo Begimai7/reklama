@@ -142,27 +142,27 @@ export const categoryList = [
     name: "Услуги",
   },
   {
-    id: 6,
+    id: 7,
     icon: job,
     name: "Работа",
   },
   {
-    id: 7,
+    id: 8,
     icon: tools,
     name: "Оборудование для офиса",
   },
   {
-    id: 8,
+    id: 9,
     icon: plant,
     name: "Дом и растения",
   },
   {
-    id: 9,
+    id: 10,
     icon: medicine,
     name: "Медицина",
   },
   {
-    id: 10,
+    id: 11,
     icon: bussinuesProfile,
     name: "Бизнес профили",
   },

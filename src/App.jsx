@@ -1,4 +1,4 @@
-import { WalletBalance } from "./components/wallet_balance/WalletBalance";
+import { WalletBalance } from "./components/user-profile/UserProfile";
 
 function App() {
   return (

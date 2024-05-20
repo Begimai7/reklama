@@ -1,9 +1,12 @@
-import burger from "../../../public/assets/icons/nav/burger.svg";
-import like from "../../../public/assets/icons/nav/like.svg";
-import email from "../../../public/assets/icons/nav/email.svg";
-import avatar from "../../../public/assets/icons/nav/avatar.svg";
+import burger from "@assets/icons/nav/burger.svg";
+import like from "@assets/icons/nav/like.svg";
+import email from "@assets/icons/nav/email.svg";
+import avatar from "@assets/icons/nav/avatar.svg";
+import { useLocation, Link } from "react-router-dom";
 
-export const Nav = ({ authorized }) => {
+export const Nav = () => {
+  const { pathname } = useLocation();
+  const currentRole = pathname.split("/")[1];
   return (
     <div className='bg-primary'>
       <div className='container h-[81px]  flex justify-between items-center w-full'>
@@ -14,18 +17,23 @@ export const Nav = ({ authorized }) => {
           </h4>
 
           {/* authorized */}
-          {authorized ? (
+          {currentRole === "user" ? (
             <div className='flex gap-8'>
               <img src={like} alt='' />
               <img src={email} alt='' />
-              <img
-                className='rounded-full w-[38px] h-[38px]'
-                src={avatar}
-                alt=''
-              />
-              <button className='text-primary font-medium font-inter text-[16px] px-3 py-2 rounded-[5px] bg-white'>
+              <Link to='dashboard'>
+                <img
+                  className='rounded-full w-[38px] h-[38px]'
+                  src={avatar}
+                  alt=''
+                />
+              </Link>
+              <Link
+                to='/user/posting-page'
+                className='text-primary font-medium font-inter text-[16px] px-3 py-2 rounded-[5px] bg-white'
+              >
                 Подать объявление
-              </button>
+              </Link>
             </div>
           ) : (
             // none-authorized

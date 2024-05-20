@@ -1,17 +1,15 @@
-import { Container } from "../UI/Container";
 import banner from "@assets/images/banner.png";
 import { NewProductUpdates } from "./NewProductUpdates";
 import { Category } from "../UI/Category";
 
-export const LandingPage = () => {
+export const MainPage = () => {
   const pagination = 8;
 
   const numbers = Array.from({ length: pagination }, (_, i) => i + 1);
   return (
-    <Container>
+    <div>
       <Category />
       <div className='flex flex-col gap-10'>
-        {" "}
         <div className=''>
           <img src={banner} alt='' />
         </div>
@@ -33,6 +31,6 @@ export const LandingPage = () => {
           </div>
         </div>
       </div>
-    </Container>
+    </div>
   );
 };
