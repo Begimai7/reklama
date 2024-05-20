@@ -1,5 +1,6 @@
 import { newUpdateData } from "@utils/constants";
 import arrowDown from "@assets/icons/arrow-down.svg";
+import { Link } from "react-router-dom";
 
 export const NewProductUpdates = () => {
   return (
@@ -15,7 +16,7 @@ export const NewProductUpdates = () => {
       </div>
       <div className='grid grid-cols-4 gap-5'>
         {newUpdateData.map((el) => (
-          <div key={el.id}>
+          <Link to={`/products/detail/${el.title}`} key={el.id}>
             <img className='w-[324px]' src={el.img} alt='' />
             <div>
               <h5 className='text-[#1E293B] font-semibold text-[32px]'>
@@ -33,7 +34,7 @@ export const NewProductUpdates = () => {
                 Написать
               </button>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

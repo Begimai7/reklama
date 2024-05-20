@@ -38,10 +38,13 @@ const tabsProfile = [
     content: <ImproveProfile />,
   },
 ];
-export const WalletBalance = () => {
+export const UserProfile = () => {
   return (
     <Container>
-      <div className='shadow-xl p-8 w-[40%] '>
+      <div
+        style={{ boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px" }}
+        className=' p-8 w-[40%] '
+      >
         <p className='text-[#8D95A1] text-[20px] mb-2'>Баланс кошелька:</p>
         <h5 className='text-[#1E293B] text-[40px] font-semibold'>300 USD</h5>
         <div className='flex justify-end mt-20'>
