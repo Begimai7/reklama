@@ -80,7 +80,10 @@ export const Chats = () => {
               src={el.avatar}
               alt=''
             />
-            <div className='p-5 rounded-md shadow-md w-full'>
+            <div
+              style={{ boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px" }}
+              className='p-5 rounded-md  w-full'
+            >
               <p className='text-[#1E293B] text-[20px] font-medium'>
                 {el.title}
               </p>
