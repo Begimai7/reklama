@@ -7,11 +7,11 @@ import { ProductDetail } from "@components/main-page/product-detail/ProductDetai
 import { GuestLayout } from "@layout/GuestLayout";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <MainPage />,
-    errorElement: <div>Not found!</div>,
-  },
+  // {
+  //   path: "/",
+  //   element: <MainPage />,
+  //   errorElement: <div>Not found!</div>,
+  // },
   {
     path: "/user",
     element: <UserLayout />,
@@ -34,11 +34,15 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "products",
+    path: "/",
     element: <GuestLayout />,
     children: [
       {
-        path: "detail/:name",
+        path: "/",
+        element: <MainPage />,
+      },
+      {
+        path: "/products/detail/:name",
         element: <ProductDetail />,
       },
     ],

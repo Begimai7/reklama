@@ -10,7 +10,7 @@ import googlePay from "@assets/icons/footer/google-pay.svg";
 
 export const Footer = () => {
   return (
-    <div className='container flex justify-between items-start pb-20 '>
+    <div className='container md:flex hidden justify-between items-start pb-20 '>
       <div className='flex flex-col gap-3 w-[320px]'>
         <h4 className='text-primary text-[24px] font-bold font-inter'>
           Реклама √1
