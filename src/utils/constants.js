@@ -254,3 +254,21 @@ export const newUpdateData = [
     desc: "Сумка  с кожанными ремнями в оранжевом цвете...",
   },
 ];
+
+export const readyMessages = [
+  { id: 1, text: "Еще актуально?" },
+  { id: 2, text: "Я заинтересован!" },
+  { id: 3, text: "Торг возможен" },
+  { id: 4, text: " актуально" },
+  { id: 5, text: " заинтересован" },
+];
+export const images = [
+  { id: 1, img: bag },
+  { id: 2, img: bag },
+  { id: 3, img: bag },
+  { id: 4, img: bag },
+  { id: 5, img: bag },
+  { id: 6, img: bag },
+  { id: 7, img: bag },
+  { id: 8, img: bag },
+];
