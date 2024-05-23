@@ -272,3 +272,37 @@ export const images = [
   { id: 7, img: bag },
   { id: 8, img: bag },
 ];
+export const filterByRegion = [
+  { id: 1, title: "Bishkek" },
+  { id: 2, title: "Osh" },
+  { id: 3, title: "Batken" },
+  { id: 4, title: "Talas" },
+  { id: 5, title: "Chuy" },
+  { id: 6, title: "Jalal-Abad" },
+  { id: 7, title: "Ysyk-Kol" },
+  { id: 8, title: "Naryn" },
+];
+export const filterByCity = [
+  { id: 1, title: "Manas" },
+  { id: 2, title: "Tokmok" },
+  { id: 3, title: "Kemin" },
+];
+
+export const data = [
+  {
+    id: 1,
+    name: "Транспорт",
+  },
+  {
+    id: 2,
+    name: "Недвижимость",
+  },
+  {
+    id: 3,
+    name: "Техника и электроника",
+  },
+  {
+    id: 3,
+    name: "Дом и сад",
+  },
+];

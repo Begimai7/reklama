@@ -1,17 +1,13 @@
 import { UserLayout } from "../layout/UserLayout";
-import { MainPage } from "../components/main-page/MainPage";
+import { MainPage } from "@components/main-page/MainPage";
 import { createBrowserRouter } from "react-router-dom";
 import { PostingPage } from "@components/posting-page/PostingPage";
 import { UserProfile } from "@components/user-profile/UserProfile";
 import { ProductDetail } from "@components/main-page/product-detail/ProductDetail";
 import { GuestLayout } from "@layout/GuestLayout";
+import { FilterProduct } from "@components/main-page/filter-product-page/FilterProduct";
 
 const router = createBrowserRouter([
-  // {
-  //   path: "/",
-  //   element: <MainPage />,
-  //   errorElement: <div>Not found!</div>,
-  // },
   {
     path: "/user",
     element: <UserLayout />,
@@ -32,7 +28,6 @@ const router = createBrowserRouter([
       },
     ],
   },
-
   {
     path: "/",
     element: <GuestLayout />,
@@ -44,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/products/detail/:name",
         element: <ProductDetail />,
+      },
+      {
+        path: "/products/city_id/:id",
+        element: <FilterProduct />,
       },
     ],
   },
