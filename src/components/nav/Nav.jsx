@@ -2,59 +2,40 @@ import burger from "@assets/icons/nav/burger.svg";
 import like from "@assets/icons/nav/like.svg";
 import email from "@assets/icons/nav/email.svg";
 import avatar from "@assets/icons/nav/avatar.svg";
-import favourites from "@assets/icons/nav/favourites.svg";
-import chats from "@assets/icons/nav/chats.svg";
-import profile from "@assets/icons/nav/profile.svg";
-import add from "@assets/icons/nav/plus-add.svg";
-import home from "@assets/icons/category/home.svg";
 import { useLocation, Link } from "react-router-dom";
+import searchIcon from "@assets/icons/nav/search-icon.svg";
+import filter from "@assets/icons/nav/filter.svg";
+import "@src/index.css";
+import { useState } from "react";
+import { FilterModal } from "../UI/FilterModal";
+import { MobileMenuBottom } from "../UI/MobileMenuBottom";
+import { SearchInput } from "../UI/Search-input";
 
 export const Nav = () => {
   const { pathname } = useLocation();
   const currentRole = pathname.split("/")[1];
+  const [openFilterModal, setOpenFilterModal] = useState(false);
+
+  const openFilterModalHandler = () => {
+    setOpenFilterModal(!openFilterModal);
+  };
+
   return (
     <div>
-      {/* mobile */}
-      <div className=''>
-        <div className='fixed bottom-0 z-50 w-full sm:px-6 s:px-2 bg-[#fff]  py-3  md:hidden flex justify-between items-center gap-[6px]'>
-          <Link className='flex flex-col items-center gap-[6px]'>
-            <img className='h-6 w-6' src={home} alt='' />
-            <span className='s:text-[12px] text-[10px]'>Главная</span>
-          </Link>
-          <Link className='flex flex-col items-center gap-[6px]'>
-            <img className='h-6 w-6' src={favourites} alt='' />
-            <span className='s:text-[12px] text-[10px]'>Избранное</span>
-          </Link>
-          <Link className='flex flex-col items-center gap-[6px]'>
-            <div className='bg-primary rounded-full p-6 absolute left-[44%] bottom-10'>
-              <img className='h-6 w-6 ' src={add} alt='add' />
-            </div>
-            <span className='s:text-[12px] text-[10px] mt-7'>Подать</span>
-          </Link>
-          <Link className='flex flex-col items-center gap-[6px]'>
-            <img className='h-6 w-6' src={chats} alt='' />
-            <span className='s:text-[12px] text-[10px]'>Чаты</span>
-          </Link>
-          <Link className='flex flex-col items-center gap-[6px]'>
-            <img className='h-6 w-6' src={profile} alt='' />
-            <span className='s:text-[12px] text-[10px]'>Профиль</span>
-          </Link>
-        </div>
-      </div>
-      {/* desktop */}
-      <div className='bg-primary md:flex hidden'>
+      {/* desktop-top */}
+      <div className='md:flex hidden  bg-primary md: m-0'>
         <div className='container h-[81px]  flex justify-between items-center w-full'>
           <img src={burger} alt='' />
-          <div className='flex justify-between w-[60%]'>
+          <div className='flex items-center justify-between w-[60%]'>
             <Link to='/'>
-              <h4 className='text-[#fff] text-[24px] font-semibold font-inter'>
+              <h4 className='text-[#fff] lg:text-[24px] font-semibold font-inter'>
                 Реклама √1
               </h4>
             </Link>
 
             {/* authorized */}
             {currentRole === "user" ? (
-              <div className='flex gap-8'>
+              <div className='flex lg:gap-8 gap-3'>
                 <img src={like} alt='' />
                 <img src={email} alt='' />
                 <Link to='dashboard'>
@@ -73,7 +54,7 @@ export const Nav = () => {
               </div>
             ) : (
               // none-authorized
-              <div className='flex gap-8'>
+              <div className='flex lg:gap-8 gap-4'>
                 <button className='font-medium font-inter text-[16px] px-3 py-2 rounded-[5px] border border-white text-white'>
                   Войти
                 </button>
@@ -85,6 +66,39 @@ export const Nav = () => {
           </div>
         </div>
       </div>
+      {/* desktop search */}
+      <SearchInput />
+      {/* mobile search-input */}
+      <div className='container md:hidden flex items-center gap-3'>
+        <div className='relative w-full'>
+          <input
+            className='pl-12 py-3 rounded-md bg-bgGray w-full outline-none'
+            type='text'
+            placeholder='Я ищу...'
+          />
+          <img
+            className='absolute top-3 left-3'
+            src={searchIcon}
+            alt='Search'
+          />
+        </div>
+        <img
+          onClick={openFilterModalHandler}
+          className='block'
+          src={filter}
+          alt='Filter'
+        />
+      </div>
+      {/* filter modal */}
+      <div
+        className={`fixed top-0 right-0 h-full w-full bg-white shadow-lg z-50 transition-transform duration-500 transform
+         ${openFilterModal ? "translate-x-0" : "translate-x-full"}
+        `}
+      >
+        <FilterModal closeFilterModalHandler={openFilterModalHandler} />
+      </div>
+      {/* mobile-bottom */}
+      <MobileMenuBottom />
     </div>
   );
 };

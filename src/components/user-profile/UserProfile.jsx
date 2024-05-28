@@ -1,5 +1,5 @@
 import { Container } from "../UI/Container";
-import { Tabs } from "../tabs/Tabs";
+import { Tabs } from "../mobile/posting/tabs/Tabs";
 import { Announcement } from "./announcement/Announcement";
 import { Message } from "./message/Message";
 import { ProfileSetting } from "./profile_setting/ProfileSetting";

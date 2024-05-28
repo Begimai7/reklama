@@ -120,54 +120,63 @@ export const categoryList = [
     id: 2,
     icon: transport,
     name: "Транспорт",
+    color: "#f4e7f3",
   },
   {
     id: 3,
     icon: home,
     name: "Недвижимость",
+    color: "#dbecf1",
   },
   {
     id: 4,
     icon: tech,
     name: "Техника и электро...",
+    color: "#e8e0f6",
   },
   {
     id: 5,
     icon: animals,
     name: "Животные",
+    color: "#f3e9f5",
   },
   {
     id: 6,
     icon: services,
     name: "Услуги",
+    color: "#dae9ed",
   },
   {
     id: 7,
     icon: job,
     name: "Работа",
+    color: "#e8e0f6",
   },
   {
     id: 8,
     icon: tools,
     name: "Оборудование для офиса",
+    color: "#f4e7f3",
   },
   {
     id: 9,
     icon: plant,
     name: "Дом и растения",
+    color: "#e6f2f4",
   },
   {
     id: 10,
     icon: medicine,
     name: "Медицина",
+    color: "#f3f4e6",
   },
   {
     id: 11,
     icon: bussinuesProfile,
     name: "Бизнес профили",
+    color: "#f4e9e6",
   },
 ];
-
 export const newUpdateData = [
   {
     id: 1,
@@ -302,7 +311,46 @@ export const data = [
     name: "Техника и электроника",
   },
   {
-    id: 3,
+    id: 4,
     name: "Дом и сад",
+  },
+];
+export const currency = [
+  {
+    id: 1,
+    name: "KGS",
+  },
+  {
+    id: 2,
+    name: "USD",
+  },
+];
+
+export const productFIlterCurrency = [
+  {
+    id: 1,
+    name: "Популярный",
+  },
+  {
+    id: 2,
+    name: "Сначала",
+  },
+  {
+    id: 3,
+    name: "Самый дешевый",
+  },
+  {
+    id: 4,
+    name: "Самый дорогой",
+  },
+];
+export const favouriteTabs = [
+  {
+    id: 1,
+    name: "Товары",
+  },
+  {
+    id: 2,
+    name: "Подписки",
   },
 ];

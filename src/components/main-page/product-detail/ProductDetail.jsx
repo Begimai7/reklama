@@ -17,8 +17,8 @@ export const ProductDetail = () => {
 
   return (
     <div>
-      <div className='flex items-start gap-5 font-inter '>
-        <div className='flex flex-col w-[55%]'>
+      <div className='flex  md:flex-row flex-col items-start gap-5 font-inter '>
+        <div className='flex flex-col md:w-[55%] w-full'>
           <img src={bag} alt='' />
           <Slider
             sliderData={images}
@@ -26,7 +26,7 @@ export const ProductDetail = () => {
             numberSlider={[0, 5]}
           />
         </div>
-        <div className='w-[45%] border border-[#E3E3E3] rounded-md py-7'>
+        <div className='md:w-[45%] w-full border border-[#E3E3E3] rounded-md py-7'>
           <div className='px-7'>
             <h3 className='text-[#1E293B] text-[40px] font-bold'>120 USD</h3>
             <p className='text-[#8D95A1] text-[24px] font-medium'>10490 KGS</p>
@@ -79,7 +79,7 @@ export const ProductDetail = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-col gap-5 w-[54%] rounded-md border border-[#E3E3E3] p-5 my-7'>
+      <div className='flex flex-col gap-5 md:w-[54%] w-full rounded-md border border-[#E3E3E3] p-5 my-7'>
         <div>
           <p className='text-[#8D95A1] text-[14px]'>
             Показы: <span>1020</span>
@@ -103,7 +103,7 @@ export const ProductDetail = () => {
           </div>
           <div className='text-primary font-medium text-[16px]'>Показать</div>
         </div>
-        <div className=''>
+        <div>
           <MapComponent />
         </div>
         <div className='flex flex-col gap-4'>
@@ -175,7 +175,7 @@ export const ProductDetail = () => {
         <h3 className='text-[40px] text-[#1E293B] font-semibold pb-6'>
           Схожие объявления{" "}
         </h3>
-        <div className='grid grid-cols-4 gap-5'>
+        <div className='grid md:grid-cols-4 grid-cols-2 gap-5'>
           {newUpdateData.slice(0, 4).map((el) => (
             <div key={el.id}>
               <img className='w-[324px]' src={el.img} alt='' />
@@ -186,7 +186,7 @@ export const ProductDetail = () => {
                 <h6 className='text-[#8691A4] font-medium text-[22px]'>
                   {el.title}
                 </h6>
-                <p className='w-[230px] text-[#515A68] text-[14px] line-clamp-2'>
+                <p className='sm:w-[230px] [171px] text-[#515A68] text-[14px] line-clamp-2'>
                   {el.desc}
                 </p>
               </div>

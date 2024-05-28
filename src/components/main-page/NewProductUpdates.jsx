@@ -12,7 +12,7 @@ export const NewProductUpdates = () => {
 
   const handleChange = (event) => {
     setSelectedValue(event.target.value);
-    navigate(`/products/city_id/${event.target.value}`);
+    navigate(`products/city_id/${event.target.value}`);
   };
 
   const selectedFilterChange = (filter) => {
@@ -25,11 +25,12 @@ export const NewProductUpdates = () => {
   return (
     <div className='w-full'>
       <div className=' py-10 w-full'>
-        <h4 className='sm:flex hidden text-[#1E293B] text-[40px] font-semibold'>
+        <h4 className='md:flex hidden text-[#1E293B] text-[40px] font-semibold'>
           Новые объявления{" "}
         </h4>
+        {/* tabs */}
         <div className='flex items-center justify-between'>
-          <div className='bg-bgGray flex items-center sm:w-[50%] w-full rounded-md py-1 px-1 text-[#1E293B] my-5'>
+          <div className='bg-bgGray flex items-center md:w-[50%] w-full rounded-md py-1 px-1 text-[#1E293B] md:my-5'>
             <div
               className={`text-center py-2 rounded-md w-1/2 ${
                 selectedFilter === "Рекомендуемые" ? "bg-white" : ""
@@ -48,16 +49,18 @@ export const NewProductUpdates = () => {
             </div>
           </div>
 
-          <Select
-            value={selectedValue}
-            handleChange={handleChange}
-            options={filterByRegion}
-            borderColor='none'
-            inputLabel='Все города'
-            padding='0 0 0 32px'
-            textColor='#C811AA'
-            iconColor='#C811AA'
-          />
+          <div className='md:block hidden'>
+            <Select
+              value={selectedValue}
+              handleChange={handleChange}
+              options={filterByRegion}
+              borderColor='none'
+              inputLabel='Все города'
+              padding='0 0 0 32px'
+              textColor='#C811AA'
+              iconColor='#C811AA'
+            />
+          </div>
         </div>
       </div>
       <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2  gap-5'>

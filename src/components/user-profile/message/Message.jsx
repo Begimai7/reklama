@@ -1,4 +1,4 @@
-import { Tabs } from "../../tabs/Tabs";
+import { Tabs } from "../../mobile/posting/tabs/Tabs";
 import { Chats } from "./Chats";
 
 const tabsProfile = [

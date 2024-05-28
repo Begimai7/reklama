@@ -1,12 +1,14 @@
 import banner from "@assets/images/banner.png";
 import { NewProductUpdates } from "./NewProductUpdates";
+import { Category } from "../UI/Category";
 
 export const MainPage = () => {
   const pagination = 8;
 
   const numbers = Array.from({ length: pagination }, (_, i) => i + 1);
   return (
-    <div className='container flex flex-col gap-10'>
+    <div className='container flex flex-col gap-3'>
+      <Category />
       <div className='sm:w-full'>
         <img src={banner} alt='' />
       </div>

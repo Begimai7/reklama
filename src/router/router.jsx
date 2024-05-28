@@ -6,6 +6,10 @@ import { UserProfile } from "@components/user-profile/UserProfile";
 import { ProductDetail } from "@components/main-page/product-detail/ProductDetail";
 import { GuestLayout } from "@layout/GuestLayout";
 import { FilterProduct } from "@components/main-page/filter-product-page/FilterProduct";
+import { Favourites } from "@components/mobile/favourites/Favourites";
+import { Chats } from "@components/mobile/chats/Chats";
+import { Profile } from "@components/mobile/profile/Profile";
+import { PostPage } from "@components/mobile/posting/PostPage";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +30,26 @@ const router = createBrowserRouter([
         element: <PostingPage />,
         errorElement: <div>Not found!</div>,
       },
+      {
+        path: "products/city_id/:id",
+        element: <FilterProduct />,
+      },
+      {
+        path: "favourites",
+        element: <Favourites />,
+      },
+      {
+        path: "impost",
+        element: <PostPage />,
+      },
+      {
+        path: "chats",
+        element: <Chats />,
+      },
+      {
+        path: "profile",
+        element: <Profile />,
+      },
     ],
   },
   {
@@ -41,7 +65,7 @@ const router = createBrowserRouter([
         element: <ProductDetail />,
       },
       {
-        path: "/products/city_id/:id",
+        path: "products/city_id/:id",
         element: <FilterProduct />,
       },
     ],
