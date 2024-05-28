@@ -120,54 +120,63 @@ export const categoryList = [
     id: 2,
     icon: transport,
     name: "Транспорт",
+    color: "#f4e7f3",
   },
   {
     id: 3,
     icon: home,
     name: "Недвижимость",
+    color: "#dbecf1",
   },
   {
     id: 4,
     icon: tech,
     name: "Техника и электро...",
+    color: "#e8e0f6",
   },
   {
     id: 5,
     icon: animals,
     name: "Животные",
+    color: "#f3e9f5",
   },
   {
     id: 6,
     icon: services,
     name: "Услуги",
+    color: "#dae9ed",
   },
   {
     id: 7,
     icon: job,
     name: "Работа",
+    color: "#e8e0f6",
   },
   {
     id: 8,
     icon: tools,
     name: "Оборудование для офиса",
+    color: "#f4e7f3",
   },
   {
     id: 9,
     icon: plant,
     name: "Дом и растения",
+    color: "#e6f2f4",
   },
   {
     id: 10,
     icon: medicine,
     name: "Медицина",
+    color: "#f3f4e6",
   },
   {
     id: 11,
     icon: bussinuesProfile,
     name: "Бизнес профили",
+    color: "#f4e9e6",
   },
 ];
-
 export const newUpdateData = [
   {
     id: 1,
@@ -271,4 +280,77 @@ export const images = [
   { id: 6, img: bag },
   { id: 7, img: bag },
   { id: 8, img: bag },
+];
+export const filterByRegion = [
+  { id: 1, title: "Bishkek" },
+  { id: 2, title: "Osh" },
+  { id: 3, title: "Batken" },
+  { id: 4, title: "Talas" },
+  { id: 5, title: "Chuy" },
+  { id: 6, title: "Jalal-Abad" },
+  { id: 7, title: "Ysyk-Kol" },
+  { id: 8, title: "Naryn" },
+];
+export const filterByCity = [
+  { id: 1, title: "Manas" },
+  { id: 2, title: "Tokmok" },
+  { id: 3, title: "Kemin" },
+];
+
+export const data = [
+  {
+    id: 1,
+    name: "Транспорт",
+  },
+  {
+    id: 2,
+    name: "Недвижимость",
+  },
+  {
+    id: 3,
+    name: "Техника и электроника",
+  },
+  {
+    id: 4,
+    name: "Дом и сад",
+  },
+];
+export const currency = [
+  {
+    id: 1,
+    name: "KGS",
+  },
+  {
+    id: 2,
+    name: "USD",
+  },
+];
+
+export const productFIlterCurrency = [
+  {
+    id: 1,
+    name: "Популярный",
+  },
+  {
+    id: 2,
+    name: "Сначала",
+  },
+  {
+    id: 3,
+    name: "Самый дешевый",
+  },
+  {
+    id: 4,
+    name: "Самый дорогой",
+  },
+];
+export const favouriteTabs = [
+  {
+    id: 1,
+    name: "Товары",
+  },
+  {
+    id: 2,
+    name: "Подписки",
+  },
 ];

@@ -40,7 +40,7 @@ const Slider = ({ sliderData, onSlideClick, numberSlider }) => {
 
   return (
     <div
-      className='relative w-full overflow-hidden flex items-center py-5'
+      className='relative z-[-1] w-full overflow-hidden flex items-center py-5'
       ref={sliderRef}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
