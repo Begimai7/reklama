@@ -1,0 +1,1532 @@
+{
+	"info": {
+		"_postman_id": "06ffeafc-c354-4383-9875-0d015044ceab",
+		"name": "reklama",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10852455",
+		"_collection_link": "https://bold-trinity-1410.postman.co/workspace/Laravel-API-For-Flutter~3b65891e-4ef7-426f-8967-ec0a79026ede/collection/10852455-06ffeafc-c354-4383-9875-0d015044ceab?action=share&source=collection_link&creator=10852455"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Test Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\":112\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/v1/test-login",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"test-login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Khatri Dai\",\n    \"email\":\"khatri@gmail.com\",\n    \"password\":\"password\",\n    \"phone\":\"9847373848\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/v1/register",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"rnuser@gmail.com\",\n    \"password\":\"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/v1/login",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Google Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"google_id\":\"ya29.a0AVvZVsrcnyoXKwrzWoY7FlopI29FTbUF00fdeQXsVPsVslMHL_o5qwnIoiB5j_T7VMZLeQ1ydLY-fZa8J70yJGaR01B0NaL3KIEpJJ40HgERAvgw3fYSGGwsqa8Ar3xO2rrJXeBmSry-JMh-_1E9cN9x0SMYaCgYKARwSARASFQGbdwaIpS63oRlqITh0OZ-pP4WkVg0163\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/v1/google-login",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"google-login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Apple Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"apple_id\":\"eyJraWQiOiJmaDZCczhDIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJodHRwczovL2FwcGxlaWQuYXBwbGUuY29tIiwiYXVkIjoiY2xvdWQuYW1hbmF0LWludmVzdC50YXRhZGV2IiwiZXhwIjoxNjc2NjMxODQzLCJpYXQiOjE2NzY1NDU0NDMsInN1YiI6IjAwMTYwOC40Y2FjYmFhYzRmNWY0YmIxYWI5MzUxOGQ5NDJhMDZjYi4xMTAxIiwibm9uY2UiOiI1ODQ1M2I2ZS1hNWM1LTQ3YjAtYTE3Yi0yZWYyOTRkODdhNjIucGdHcWN6N2o5OU1yTWhKeUs2WDJrRFA5eDFONjREdFl4bTRFUUZIOSIsImF0X2hhc2giOiI0VzFOSVQ3OUR2RVFqd0dlZGthbkh3IiwiZW1haWwiOiJreHdiNHh3OXl6QHByaXZhdGVyZWxheS5hcHBsZWlkLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjoidHJ1ZSIsImlzX3ByaXZhdGVfZW1haWwiOiJ0cnVlIiwiYXV0aF90aW1lIjoxNjc2NTQ1Mzc3LCJub25jZV9zdXBwb3J0ZWQiOnRydWV9.dYJYdIgMwgGx1t8jYbijlXT_q_3oe30hgm76CivMz3DhH8a0MffyBtoFprWyj6onjVPGnmicVrfCXC90WqiEQq_Bia1IIcp5PgkFFYI97NGqkvvikz2iQT2t_tHGNEeGctKa1FTAaUb0bBVkq8wo4JuGhq1dSP4TiSePM4yi-VzVudufEfNHcW6UTXnkJW3oobaTolDIBZ44bt5W1hUhlbcOn0RG06Z2KLQvRX5Kz7N2l6106FLs9B97SheWdOm0x39bmFJ_0KqZM316aZ1CF02fprLg2jmJdBkLEhFIfs1-l8b_--Kub8milVWggl7-GB6lnc6yxbymyvVNvE4Abw\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/v1/apple-login",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"apple-login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Firebase OTP Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phone\":\"+996123456789\",\n    \"firebase_id\":\"MDH53ctHkiQrhQNsJJtY4cqfosQ2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/v1/firebase-login",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"firebase-login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Info",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}api/v1/users/info",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"users",
+								"info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/users/delete",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"users",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile Image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/Users/rnkhatri/Downloads/fridge-waktech-brand-choice-13.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}api/v1/users/image-upload",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"users",
+								"image-upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"password\":\"password\",\n    \"password_confirmation\":\"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/v1/users/change-password",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"users",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FCM Token Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fcm_token\":\"fsdferrwerwer\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/v1/users/fcm-token-update",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"users",
+								"fcm-token-update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "About",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/about",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"about"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" :\"RN Khatri \",\n    \"phone\" :\"9869865965\",\n    \"country\" : \"Nepal\",\n    \"city\" : \"KTM\",\n    \"registered\" : 1,\n    \"state\" : \"Kritpur\",\n    \"address\" : \"\",\n    \"about\" : \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/v1/users/update",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"users",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Seller",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/sellers/19",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"sellers",
+								"19"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Common",
+			"item": [
+				{
+					"name": "Banners",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/banners",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"banners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Terms",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "ru",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}api/v1/terms",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"terms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Privacy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/privacy",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"privacy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/cities",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"cities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Homepage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/homepage",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"homepage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Config",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/config",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"config"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test Image Heic",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/Users/rnkhatri/Downloads/Archive/IMG_2265.HEIC"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}api/v1/test-image",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"test-image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Banks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/banks",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"banks"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "Posts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}api/v1/posts",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"posts"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/posts/9",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"posts",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "ru",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}api/v1/posts/categories",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"posts",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/posts/categories/1",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"posts",
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/products",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/products/148",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"148"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "ru",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}api/v1/products/categories",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category Detail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}api/v1/products/categories/32",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"categories",
+								"32"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fevourite Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/products/fevourites",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"fevourites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Favorites Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":11,\n    \"favourable_type\":\"Product\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/v1/favourites/store",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"favourites",
+								"store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Favorites Remove",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":11,\n    \"favourable_type\":\"Product\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/v1/favourites/remove",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"favourites",
+								"remove"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Test Product",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Test Product description",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "attribute[1]",
+									"value": "1 бөлмө",
+									"type": "text"
+								},
+								{
+									"key": "attribute[2]",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "attribute[4]",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "attribute[5]",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "attribute[6]",
+									"value": "107-серия",
+									"type": "text"
+								},
+								{
+									"key": "attribute[7]",
+									"value": "434",
+									"type": "text"
+								},
+								{
+									"key": "attribute[8][]",
+									"value": "Башкы ишеним кат",
+									"type": "text"
+								},
+								{
+									"key": "attribute[8][]",
+									"value": "Белек келишими",
+									"type": "text"
+								},
+								{
+									"key": "discount",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "dates",
+									"value": "2023/2/17 12:00 AM - 2023/2/17 11:59 PM",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/Users/rnkhatri/Downloads/fridge-and-freezer-repair_2x_1x.jpg"
+								},
+								{
+									"key": "city_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "galleries[]",
+									"type": "file",
+									"src": "/Users/rnkhatri/Downloads/fridge-waktech-brand-choice-13.png"
+								},
+								{
+									"key": "galleries[]",
+									"type": "file",
+									"src": "/Users/rnkhatri/Downloads/images (2).jpeg"
+								},
+								{
+									"key": "currency",
+									"value": "USD",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "99868638783",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}api/v1/products/add",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Edit",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "ru",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}api/v1/products/edit/34",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"edit",
+								"34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Test Product",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Test Product description",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "attribute[1]",
+									"value": "1 бөлмө",
+									"type": "text"
+								},
+								{
+									"key": "attribute[2]",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "attribute[4]",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "attribute[5]",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "attribute[6]",
+									"value": "107-серия",
+									"type": "text"
+								},
+								{
+									"key": "attribute[7]",
+									"value": "434",
+									"type": "text"
+								},
+								{
+									"key": "attribute[8][]",
+									"value": "Башкы ишеним кат",
+									"type": "text"
+								},
+								{
+									"key": "attribute[8][]",
+									"value": "Белек келишими",
+									"type": "text"
+								},
+								{
+									"key": "discount",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "dates",
+									"value": "2023/2/17 12:00 AM - 2023/2/17 11:59 PM",
+									"type": "text"
+								},
+								{
+									"key": "city_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "galleries[]",
+									"type": "file",
+									"src": "/Users/rnkhatri/Downloads/fridge-waktech-brand-choice-13.png"
+								},
+								{
+									"key": "old_galleries[]",
+									"value": "test.jpg",
+									"type": "text"
+								},
+								{
+									"key": "currency",
+									"value": "ru",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}api/v1/products/update/9",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"update",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/products/delete/9",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"delete",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Attribute of category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}api/v1/products/attributes/6",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"attributes",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Likes store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":74,\n    \"likeable_type\":\"Product\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/v1/likes/store",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"likes",
+								"store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Likes remove",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":9,\n    \"likeable_type\":\"Post\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/v1/likes/remove",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"likes",
+								"remove"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Like Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/products/likes",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"likes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My Product Lists",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/products/my-list",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"my-list"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "pending",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"Latest Product Searching\",\n    \"result\":\"?search=hello&category_id=12\",\n    \"type\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/v1/products/save-search",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"save-search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/products/search-list",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"search-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Search Result",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/products/delete-search/2",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"delete-search",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Seller Prodcuts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/products/seller-products/1",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"seller-products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Product Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\":\"pending\" //published\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}api/v1/products/change-status/74",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"change-status",
+								"74"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Related Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/products/related/82",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"related",
+								"82"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Add To Promotion ",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "148",
+									"type": "text"
+								},
+								{
+									"key": "days",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "payment_method",
+									"value": "bank",
+									"type": "text"
+								},
+								{
+									"key": "bank_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "bank_slip",
+									"type": "file",
+									"src": "/Users/rnkhatri/Downloads/photos/WhatsApp Image 2023-02-28 at 7.32.27 PM.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}api/v1/products/promotion",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"products",
+								"promotion"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Chat",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/chats/list/78_69",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"chats",
+								"list",
+								"78_69"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/Users/rnkhatri/Downloads/photo-1616844868137-7ffaf43c2d80.jpeg",
+									"disabled": true
+								},
+								{
+									"key": "message",
+									"value": "Hello How are",
+									"type": "text"
+								},
+								{
+									"key": "chat_id",
+									"value": "76_5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}api/v1/chats/store",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"chats",
+								"store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product Lists For chat",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}api/v1/chats",
+							"host": [
+								"{{url}}api"
+							],
+							"path": [
+								"v1",
+								"chats"
+							],
+							"query": [
+								{
+									"key": "seller/cuserom",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiN2Y1M2ZkMjMzMmU4N2JmOWI2OWYyZWFlNzE2NmQ5N2JjNWUxNzZjOWM5M2Q4MjdkZTk0MmQwMjhmM2ZhMzA3MTBhYjgyYTEyNTIyNmE3ODEiLCJpYXQiOjE2OTAwNDA3OTEuMTA2ODE2LCJuYmYiOjE2OTAwNDA3OTEuMTA2ODE5LCJleHAiOjE3MjE2NjMxOTEuMDg5ODk1LCJzdWIiOiIxMjkiLCJzY29wZXMiOltdfQ.bWo6wam1Ek_G7CmYpZIIQYpxjNqNecfleksctalmVrs3Ozgk90PQ5LXH6sPUmzX2wkSX7cEZr_rxzAt_Yop3sWOCgBzN6lqyA5De3a2vaOjzoaM5FlnUE58FrVmmkZrDNq19G3LRWJOzMQtBaQ4E8TERewmrvX7RYLikwK6KOLPs4nMAVwpcjfi-MC1Q90lNlGmdnsqz5JjXJesybIsSpXKnyBRL-ogrGyctCqvug3P8DZmcMrqwMH0gbX2xrWAgqJQDJQnvm_tjzsPJwfIhAukMqI-AJ1B1N6MeRl_7GRHg593ujyMcBfAu-05AROBy3YjEhBTwCklUzcUZtp57x0Gh9ngdM6b2rbqFMh9RBRSlbhF1CmErBxHX3Yf3C-6vlmHUGkPLQptCHX7m5NwiqJ2qp4bMrE8j11on-vxSBvuEVclTx4dK_W638k6xaqsjebnZQTIJXpBy_WjNk5hLa-geScPG_AtGSsZ4roIqX-0Y9S1OvpARybpOZmkm7gwgV29XMx5tIlHIRH4Gl0GH2WU8rR6nWxQIr8_afd2FEfvl12owvNuIu8ZQUbMxWs4ANfFAWXYrOMyO6Do6Q-OM-DVGY1M_d5-Cehoo_yd4__WurIAM35uM0buFYKMbVkHK9ou8uiqYoRYBuWge0xKG-8-z2m2ENgXuUZMgTeP66Y8",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
