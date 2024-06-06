@@ -10,6 +10,8 @@ export default defineConfig({
       "@utils": "/src/utils",
       "@components": "/src/components",
       "@layout": "/src/layout",
+      "@api": "/src/api",
+      "@service": "/src/service",
       "@src": "/src",
     },
   },

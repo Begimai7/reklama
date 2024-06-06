@@ -10,10 +10,13 @@ import { useState } from "react";
 import { FilterModal } from "../UI/FilterModal";
 import { MobileMenuBottom } from "../UI/MobileMenuBottom";
 import { SearchInput } from "../UI/Search-input";
+import { useOpenModal } from "../hooks/useOpenModal";
+import { Login } from "../auth/Login";
 
 export const Nav = () => {
   const { pathname } = useLocation();
   const currentRole = pathname.split("/")[1];
+  const { open, openModalHandler } = useOpenModal();
   const [openFilterModal, setOpenFilterModal] = useState(false);
 
   const openFilterModalHandler = () => {
@@ -55,7 +58,10 @@ export const Nav = () => {
             ) : (
               // none-authorized
               <div className='flex lg:gap-8 gap-4'>
-                <button className='font-medium font-inter text-[16px] px-3 py-2 rounded-[5px] border border-white text-white'>
+                <button
+                  onClick={openModalHandler}
+                  className='font-medium font-inter text-[16px] px-3 py-2 rounded-[5px] border border-white text-white'
+                >
                   Войти
                 </button>
                 <button className='text-primary font-medium font-inter text-[16px] px-3 py-2 rounded-[5px] bg-white'>
@@ -99,6 +105,9 @@ export const Nav = () => {
       </div>
       {/* mobile-bottom */}
       <MobileMenuBottom />
+
+      {/* register */}
+      <Login open={open} />
     </div>
   );
 };

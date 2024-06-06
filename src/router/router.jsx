@@ -10,8 +10,18 @@ import { Favourites } from "@components/mobile/favourites/Favourites";
 import { Chats } from "@components/mobile/chats/Chats";
 import { Profile } from "@components/mobile/profile/Profile";
 import { PostPage } from "@components/mobile/posting/PostPage";
+import { Login } from "@components/auth/Login";
+import { Register } from "@components/auth/Register";
 
 const router = createBrowserRouter([
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/register",
+    element: <Register />,
+  },
   {
     path: "/user",
     element: <UserLayout />,
