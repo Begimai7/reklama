@@ -110,7 +110,7 @@ export const ImproveProfile = () => {
         </div>
       </div>
 
-      <div className='flex items-start justify-around my-20'>
+      <div className='flex md:flex-row flex-col md:items-start items-center justify-around my-20 md: gap-8'>
         {tarif.map((el) => (
           <div
             style={{ border: `1px solid ${el.color}` }}

@@ -7,7 +7,6 @@ export const UserLayout = () => {
   return (
     <Container>
       <Nav />
-
       <div className='container'>
         <Outlet />
       </div>
