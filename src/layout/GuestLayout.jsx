@@ -7,7 +7,6 @@ export const GuestLayout = () => {
   return (
     <Container>
       <Nav />
-
       <div className='container'>
         <Outlet />
       </div>
